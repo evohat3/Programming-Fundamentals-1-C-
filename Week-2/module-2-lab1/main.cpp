@@ -17,7 +17,7 @@ int main() {
      cout << "Enter the Month: ";
      getline(cin, month);
      cout << endl;
-     cout << "Enter rent bil amount: ";
+     cout << "Enter rent bill amount: ";
      cin >> rent;
      cout << endl;
      cout << "Enter electric bill amount: ";
