@@ -2,6 +2,7 @@
 //  main.cpp
 //  Course COSC-1336 or
 //  Name: Nigel Poblete
+// Description:  Monthly expense calculator
 
 #include <iostream>
 #include <iomanip>

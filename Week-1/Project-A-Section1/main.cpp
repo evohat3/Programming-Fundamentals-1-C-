@@ -4,8 +4,7 @@
 //  Name: Nigel Poblete
 //  Modified Date  and Purpose/Description
 /*     06/09/2024
-        - Added Welcome Header and prompt for user's first and last name
-        - Added Welcome Message to user     
+//  Project 1 - A
 */
 
 #include <iostream>

@@ -1,4 +1,11 @@
-
+//
+//  Programming 1 Course Projects
+//  main.cpp
+//  Course COSC-1336
+//  Name: Nigel Poblete
+//  Modified Date  and Purpose/Description
+/*     06/09/2024, Making a point of sale application that calculates the subtotal, tax and grandTotal of a purchase.
+*/
 
 #include <iostream>
 using namespace std; 
