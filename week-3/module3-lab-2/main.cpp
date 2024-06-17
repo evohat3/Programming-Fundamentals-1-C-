@@ -1,9 +1,9 @@
-// Programming 1
+// Programming 1 Module 3 Lab - 2
 // main.cpp
 // COSC - 1336
 // Nigel Poblete
-// Date:
-// Description:
+// Date: 06/17/24
+// Description: a program that will take in two numbers from low to high and return the count of multples from 3 and 5.
 #include <iostream>
 using namespace std;
 
@@ -18,8 +18,9 @@ int main() {
     cout << "Enter the high range: ";
     cin >> higherRange;
 
-    // for loop starting at the lower range + 1 (to negate 0 as a multiple) and incrementing untill the higherRange is reached.
-    for (int i = lowerRange + 1; i < higherRange; i++) {
+    // for loop starting at the lower range and incrementing untill the higherRange is reached 
+    // adding + 1 to the higher range so that the higher range is included as a multiple and isnt offset by index count
+    for (int i = lowerRange ; i < higherRange + 1; i++) {
         if (i % 3 == 0) {
             m3++; // incrementing the multiples of 3 into the counter
         }
