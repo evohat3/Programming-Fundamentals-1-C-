@@ -1,35 +1,28 @@
-// Programming 1 Module 3 Lab - 2
-// main.cpp
-// COSC - 1336
-// Nigel Poblete
-// Date: 06/17/24
-// Description: a program that will take in two numbers from low to high and return the count of multples from 3 and 5.
+// Name:  Nigel Poblete 
+// Course: COSC 1336
+// Professor: Professor Percy
+// project name: 
+// Date: 
 #include <iostream>
 using namespace std;
-
 int main() {
-    int lowerRange; // uninitialized lower range variable for user input
-    int higherRange; // uninitialized higher range variable for user input
-    int m3 = 0; // counter for multiples of 3
-    int m5 = 0; // counter for multiples of 5
+int boxWidth;
+int boxHeight;
 
-    cout << "Enter your lower range: ";
-    cin >> lowerRange;
-    cout << "Enter the high range: ";
-    cin >> higherRange;
+cout << " Please enter box width: ";
+cin >> boxSize;
 
-    // for loop starting at the lower range and incrementing untill the higherRange is reached 
-    // adding + 1 to the higher range so that the higher range is included as a multiple and isnt offset by index count
-    for (int i = lowerRange ; i < higherRange + 1; i++) {
-        if (i % 3 == 0) {
-            m3++; // incrementing the multiples of 3 into the counter
-        }
-        if (i % 5 == 0) {
-            m5++; // incrementing the multiples of 5 into the counter
-        }
+cout << " Please enter box height: ";
+
+
+for (int width = 0; width < boxWidth; width++) {
+    for (int height = 0; height < boxHeight; height++) {
+        cout << "x ";
     }
-    cout << "The count of numbers in the range that are multiple(s) of 3: " << m3 << endl;
-    cout << "The count of numbers in the range that are multiple(s) of 5: " << m5 << endl;
-
+        cout << " the box width is: " << boxWidth << endl;
+        cout << " the box length is: " << boxHeight << endl;
+        cout << endl;
+}
+ 
     return 0;
 }
