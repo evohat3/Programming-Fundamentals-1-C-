@@ -8,27 +8,20 @@
 using namespace std;
 
 int main() {
-    int lowerRange; // uninitialized lower range variable for user input
-    int higherRange; // uninitialized higher range variable for user input
-    int m3 = 0; // counter for multiples of 3
-    int m5 = 0; // counter for multiples of 5
+    double numerator, denominator, divide;
+    cout << "Enter your numerator: ";
+    cin >> numerator;
+    cout << "Enter your denominator: ";
+    cin >> denominator;
 
-    cout << "Enter your lower range: ";
-    cin >> lowerRange;
-    cout << "Enter the high range: ";
-    cin >> higherRange;
+    try {
+     if (denominator == 0)
+     throw 0;
 
-    // for loop starting at the lower range + 1 (to negate 0 as a multiple) and incrementing untill the higherRange is reached.
-    for (int i = lowerRange + 1; i < higherRange; i++) {
-        if (i % 3 == 0) {
-            m3++; // incrementing the multiples of 3 into the counter
-        }
-        if (i % 5 == 0) {
-            m5++; // incrementing the multiples of 5 into the counter
-        }
+     divide = numerator / denominator;
+     cout << numerator << " / " << denominator << " = " << divide << endl;
+    } catch (int num_exception) {
+          cout << "Error: Cannot divide by " << num_exception << endl;
     }
-    cout << "The count of numbers in the range that are multiple(s) of 3: " << m3 << endl;
-    cout << "The count of numbers in the range that are multiple(s) of 5: " << m5 << endl;
-
     return 0;
 }
